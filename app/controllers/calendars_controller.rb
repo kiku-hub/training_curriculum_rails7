@@ -42,7 +42,7 @@ class CalendarsController < ApplicationController
 
       puts "Date: #{(@todays_date + x)}"
 
-      days = { :month => (@todays_date + x).month, :date => (@todays_date+x).day, :plans => today_plans}
+      days = { month: (@todays_date + x).month, date: (@todays_date + x).day, plans: today_plans }
       
       # 現在の日の曜日を取得
       wday_num = (@todays_date + x).wday
